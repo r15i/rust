@@ -1,0 +1,25 @@
+[package]
+name = "guessing_game"
+version = "0.1.0"
+edition = "2021"
+
+#In the Cargo.toml file, everything that follows a header is part of that section that continues until another section starts.
+# In [dependencies] you tell Cargo which external crates your project depends on and which versions of those crates you require.
+# In this case, we specify the rand crate with the semantic version specifier 0.8.5. Cargo understands Semantic Versioning (sometimes called SemVer), which is a
+#standard for writing version numbers. 
+
+#The specifier 0.8.5 is actually shorthand for ^0.8.5, which means any version that is at least 0.8.5 but below 0.9.0.
+
+
+[dependencies]
+rand = "0.8.5"
+
+
+#Cargo fetches the latest versions of everything that dependency needs from the registry,
+#which is a copy of data from Crates.io. Crates.io is where people in the Rust ecosystem post 
+#their open source Rust projects for others to use.
+
+
+#cargo run
+#cargo update
+#cargo buid
